@@ -5,6 +5,10 @@
     align-items: center;
     position: relative;
     transform: translateY(-120%);
+        @include desktop{
+            height: 10vh;
+            transform: translateY(0%);
+        }
     &::after{
         position: absolute;
         content: '';
@@ -12,6 +16,9 @@
         width: 100%;
         height: 4rem;
         background: $dark;
+            @include desktop{
+                display: none;
+            }
     }
 }
 .navigation__container{
@@ -22,6 +29,12 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
 
 }
 .navigation__list{
@@ -30,14 +43,29 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-   
+        @include desktop{
+            flex-direction: row;
+            width: 30%;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
     li{
         padding-top: 3rem;
         font-size: 2rem;
+        @include desktop{
+            padding-top: 0;
+            text-align: end;
+            
+      
+        }
     }
 }
 .navigation__logo{
     max-width: 100%;
+        @include desktop{
+            width: 20%;
+        }
 }
 .navigation-burger{
     position: absolute;
@@ -49,14 +77,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+        @include desktop{
+            display: none;
+        }
     &__item{
         background: $dark;
         width: 100%;
-        height: .2rem;
-        
+        height: .2rem; 
     }
-
-
 }
 .display-none{
     display: none;
@@ -75,6 +103,7 @@
 .active{
     transform: translateY(0%);
     transition: 1s all ease;
+   
 }
 @keyframes show{
     0%{

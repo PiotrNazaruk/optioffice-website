@@ -40,6 +40,10 @@ map buttons
   align-items: center;
   position: relative;
   transform: translateY(-120%); }
+  @media (min-width: 1024px) {
+    .navigation {
+      height: 10vh;
+      transform: translateY(0%); } }
   .navigation::after {
     position: absolute;
     content: '';
@@ -47,6 +51,9 @@ map buttons
     width: 100%;
     height: 4rem;
     background: #213A40; }
+    @media (min-width: 1024px) {
+      .navigation::after {
+        display: none; } }
 
 .navigation__container {
   height: 80%;
@@ -56,6 +63,12 @@ map buttons
   justify-content: flex-start;
   align-items: center;
   flex-direction: column; }
+  @media (min-width: 1024px) {
+    .navigation__container {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between; } }
 
 .navigation__list {
   width: 100%;
@@ -63,12 +76,26 @@ map buttons
   flex-direction: column;
   align-items: center;
   position: relative; }
+  @media (min-width: 1024px) {
+    .navigation__list {
+      flex-direction: row;
+      width: 30%;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%; } }
   .navigation__list li {
     padding-top: 3rem;
     font-size: 2rem; }
+    @media (min-width: 1024px) {
+      .navigation__list li {
+        padding-top: 0;
+        text-align: end; } }
 
 .navigation__logo {
   max-width: 100%; }
+  @media (min-width: 1024px) {
+    .navigation__logo {
+      width: 20%; } }
 
 .navigation-burger {
   position: absolute;
@@ -80,6 +107,9 @@ map buttons
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  @media (min-width: 1024px) {
+    .navigation-burger {
+      display: none; } }
   .navigation-burger__item {
     background: #213A40;
     width: 100%;
