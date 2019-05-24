@@ -2,11 +2,15 @@ const navigation = document.querySelector('.navigation');
 const navigationItemFirst = document.querySelector('.navigation-burger__item--first');
 const navigationItemSecond = document.querySelector('.navigation-burger__item--second');
 const navigationItemThird = document.querySelector('.navigation-burger__item--third');
+const navigationItems = document.querySelectorAll('.navigation-burger__item');
 const translateBurger = ()=>{
     navigation.classList.toggle('active');
     navigationItemSecond.classList.toggle('display-none');
     navigationItemFirst.classList.toggle('translateAdd');
     navigationItemThird.classList.toggle('translateMinus');
+    navigationItems.forEach((item)=>{
+        item.classList.toggle('dark-background');
+    })
 
 }
 const navigationBurger = document.querySelector('.navigation-burger').addEventListener('click',translateBurger);
