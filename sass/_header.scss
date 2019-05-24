@@ -1,0 +1,46 @@
+.header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+     
+    }
+}
+.header__clothes-industry{
+    height: 100%;
+    width: 100%;
+    background: url('/pictures/clothes2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    filter: grayscale(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header__headline{
+    height: 6rem;
+    width: 15rem;
+    border: .2rem solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.555);
+    
+    h1{
+        color: whitesmoke;
+        letter-spacing: .5rem;
+        
+    }
+    
+}

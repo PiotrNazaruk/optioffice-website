@@ -9,7 +9,8 @@ html{
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 10px;
- 
+    color: $fontcolor;
+    letter-spacing: .1rem;
   
 
   
@@ -22,6 +23,7 @@ img{
     max-width: 100%;
     display: block;
     height: 100%;
+    width: 100%;
  
 }
 H1{
