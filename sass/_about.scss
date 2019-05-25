@@ -1,0 +1,22 @@
+.about{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.about__text{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    p{
+        font-size: 1.3rem;
+    }
+}

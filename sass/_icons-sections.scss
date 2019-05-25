@@ -1,0 +1,40 @@
+.icons{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: $shadeno5;
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+.icons__box{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    
+}
+.box__icon{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    img{
+        height: 70%;
+    }
+}
+.box__text{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p{
+        font-size: 1.2rem;
+    }
+}

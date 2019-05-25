@@ -37,6 +37,7 @@
             align-items: center;
             width: 95%;
             justify-content: space-between;
+            height: 100%;
         }
 
 }
@@ -59,7 +60,7 @@
         @include desktop{
             padding-top: 0;
             text-align: end;
-            
+            font-size: 1.2rem;
             
       
         }
@@ -67,12 +68,17 @@
 }
 .navigation__logo{
     max-width: 60%;
-        @include desktop{
-            width: 20%;
-        }
+    @include desktop{
+        height: 60%;
+        display: flex;
+        width: 10%;
+       
+    }
+    
+        
 }
 .navigation-burger{
-    position: absolute;
+    position: fixed;
     width:3rem;
     height: 2rem;
     z-index: 999;

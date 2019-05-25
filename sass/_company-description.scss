@@ -1,0 +1,30 @@
+.company-description{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        width: 95%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.company-description__photo{
+    height: 70%;
+    width: 100%;
+    background: url('/pictures/clothes1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(.5);
+}
+.company-description__content{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
