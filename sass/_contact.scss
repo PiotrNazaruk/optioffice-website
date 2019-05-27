@@ -1,0 +1,60 @@
+.contact{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.contact__map{
+    height: 80%;
+    width: 50%;
+}
+.gm-style-mtc{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
+.gmnoprint{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
+.gm-control-active{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}
+.contact__content{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    address{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3rem;
+        width: 95%;
+        margin: 0 auto;
+        p{
+            text-align: center;
+            padding-top: 2rem;
+        }
+    }
+}
+a[href^="tel:"] {
+    color: $dark;
+    font-style: initial;
+}

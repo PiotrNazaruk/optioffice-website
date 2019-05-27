@@ -1,5 +1,5 @@
 .company-description{
-    height: 60vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,13 @@
     filter: grayscale(.5);
 }
 .company-description__content{
-    height: 30%;
+    height: 40%;
     width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    p{
+        font-size: 1.2rem;
+    }
 }

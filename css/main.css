@@ -228,18 +228,29 @@ map buttons
       .header__content p {
         font-size: 1.3rem; } }
 
-@media (min-width: 1024px) {
-  .button {
-    position: absolute;
-    width: 10rem;
-    height: 4rem;
-    border: .1rem solid black;
-    display: block;
-    background: white;
-    font-size: 1.3rem;
-    letter-spacing: .3rem;
-    bottom: 10%;
-    right: 0; } }
+.button {
+  position: absolute;
+  width: 10rem;
+  height: 4rem;
+  border: .1rem solid black;
+  display: block;
+  background: white;
+  font-size: 1.3rem;
+  letter-spacing: .3rem;
+  bottom: 10%;
+  right: 0; }
+  @media (min-width: 1024px) {
+    .button {
+      position: absolute;
+      width: 10rem;
+      height: 4rem;
+      border: .1rem solid black;
+      display: block;
+      background: white;
+      font-size: 1.3rem;
+      letter-spacing: .3rem;
+      bottom: 10%;
+      right: 0; } }
 
 .about {
   height: 30vh;
@@ -324,7 +335,7 @@ map buttons
     text-align: center; }
 
 .company-description {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -345,12 +356,14 @@ map buttons
   filter: grayscale(0.5); }
 
 .company-description__content {
-  height: 30%;
+  height: 40%;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center; }
+  .company-description__content p {
+    font-size: 1.2rem; }
 
 .icons {
   height: 70vh;
@@ -387,3 +400,105 @@ map buttons
   align-items: center; }
   .box__text p {
     font-size: 1.2rem; }
+
+.construction-preview {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .construction-preview__container {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column; }
+
+.construction-preview__photo {
+  height: 60%;
+  background: url("/pictures/architectural-design-architecture-building-2096578.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  filter: grayscale(1); }
+
+.construction-preview__text {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .construction-preview__text p {
+    font-size: 1.2rem; }
+
+.construction__button {
+  bottom: 3% !important; }
+
+.contact {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__container {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.contact__map {
+  height: 80%;
+  width: 50%; }
+
+.gm-style-mtc {
+  display: none; }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .gm-style-mtc {
+      display: block; } }
+
+.gmnoprint {
+  display: none; }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .gmnoprint {
+      display: block; } }
+
+.gm-control-active {
+  display: none; }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .gm-control-active {
+      display: block; } }
+
+.contact__content {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%; }
+  .contact__content address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 95%;
+    margin: 0 auto; }
+    .contact__content address p {
+      text-align: center;
+      padding-top: 2rem; }
+
+a[href^="tel:"] {
+  color: #212426;
+  font-style: initial; }
+
+.footer {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #212426; }
+  .footer__container {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

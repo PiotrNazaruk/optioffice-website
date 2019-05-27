@@ -1,0 +1,37 @@
+.construction-preview{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        
+    }
+}
+.construction-preview__photo{
+    height: 60%;
+    background: url('/pictures/architectural-design-architecture-building-2096578.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    filter: grayscale(1);
+}
+.construction-preview__text{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 1.2rem;
+    }
+}
+ .construction__button{
+    bottom: 3% !important;
+
+}

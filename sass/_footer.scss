@@ -1,0 +1,15 @@
+.footer{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $dark;
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
