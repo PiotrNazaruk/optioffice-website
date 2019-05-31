@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+
 }
 html{
    
@@ -27,6 +28,9 @@ img{
     height: 100%;
     width: 100%;
  
+}
+a{
+    color: $dark !important;
 }
 H1{
     font-family: 'Lalezar', cursive;
@@ -62,7 +66,7 @@ map buttons
 
 
 @mixin phone-landscape {
-    @media(min-width: 600px) and (orientation : landscape) and (max-width : 700px){
+    @media(min-width: 550px) and (orientation : landscape) and (max-width : 700px){
         @content
     };
 }

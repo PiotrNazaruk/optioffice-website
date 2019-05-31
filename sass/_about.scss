@@ -1,8 +1,11 @@
 .about{
-    height: 30vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include small-phone{
+        height: 60vh;
+    }
     &__container{
         height: 95%;
         width: 95%;

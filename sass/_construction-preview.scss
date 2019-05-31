@@ -3,6 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include small-phone{
+        height: 90vh;
+    }
+    @include phone-landscape{
+        height: 100vh;
+    }
     &__container{
         height: 95%;
         width: 95%;
@@ -27,11 +33,17 @@
     width: 100%;
     display: flex;
     align-items: center;
+    @include desktop{
+        width: 40%;
+    }
     p{
         font-size: 1.2rem;
     }
 }
  .construction__button{
     bottom: 3% !important;
+    @include small-phone{
+        bottom: 1% !important;
+    }
 
 }

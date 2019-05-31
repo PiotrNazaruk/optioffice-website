@@ -5,6 +5,12 @@
     align-items: center;
     width: 100%;
     background: $shadeno5;
+    @include small-phone{
+        height: 80vh;
+    }
+    @include desktop{
+        height: 40vh;
+    }
     &__container{
         height: 95%;
         width: 95%;
@@ -13,12 +19,21 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        @include desktop{
+            flex-direction: row;
+        }
     }
 }
 .icons__box{
     height: 20%;
     width: 100%;
     display: flex;
+    @include desktop{
+        flex-direction: column;
+        height: 80%;
+        align-items: center;
+        justify-content: center;
+    }
     
 }
 .box__icon{
@@ -34,7 +49,13 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @include desktop{
+        justify-content: center;
+    }
     p{
         font-size: 1.2rem;
+        @include desktop{
+            text-align: center;
+        }
     }
 }
