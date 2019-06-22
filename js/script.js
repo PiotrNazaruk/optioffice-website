@@ -18,8 +18,7 @@ const translateBurger = ()=>{
     let windowWidth = window.innerWidth;
     if(windowWidth < 600){
         TweenMax.staggerFrom('.navigation-animation',.2,{
-            x: 30,
-            ease: Circ.easeOut
+        
         },0.3)
     }
 

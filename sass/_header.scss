@@ -1,8 +1,12 @@
 .header{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('/pictures/shopping2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
     &__container{
         height: 95%;
         width: 95%;
