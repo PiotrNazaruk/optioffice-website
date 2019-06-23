@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    position: fixed;
     transform: translateY(-120%);
     z-index: 100;
     width: 100%;
@@ -12,6 +12,7 @@
         @include desktop{
             height: 20vh;
             transform: translateY(0%);
+            position: initial;
         }
    
 }

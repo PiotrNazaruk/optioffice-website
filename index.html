@@ -14,7 +14,7 @@
     <title>OPTIOFFICE - import odzieży używanej / odzież outlet</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:300,400|Lalezar&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One|Raleway:300i,400,600&display=swap&subset=latin-ext" rel="stylesheet">
    
     
 
@@ -101,23 +101,79 @@
         </nav>
         <header class="header">
            <div class="header__container">
-                <div class="header__headlne">
+                <div class="header__headline">
                         <h3>Z nami osiągniesz sukces</h3>
-                        <h1>OPTIOFFICE <br>IMPORT ODZIEŻY | OUTLET</h1>
+                        <h1>OPTIOFFICE <br>IMPORT ODZIEŻY | <span>OUTLET</span></h1>
                         <a href=""><p>zobacz więcej</p></a> 
                 </div>
                
            
         </div>
         </header>
-        <section class="about" id="about">
-           
-        </section>
         <section class="offer">
-            <div class="offer__container">
-               
+                <div class="offer__container">
+                   <div class="offer__box offer__box--image1">
+
+                   </div>
+                   <div class="offer__box">
+                      <div class="offer__box-container">
+                            <h3>KOLEKCJA</h3>
+                            <h2>Męska</h2>
+                           
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, soluta dicta porro culpa sit dolor enim aut expedita voluptates veniam.,</p>
+                            <button class="button offer__button">zobacz..</button>
+                      </div>
+                       
+                   </div>
+                   <div class="offer__box offer__box--image2">
+                    </div>
+                    <div class="offer__box">
+                            <div class="offer__box-container">
+                                  <h2>Akcesoria</h2>
+                                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, soluta dicta porro culpa sit dolor enim aut expedita voluptates veniam.,</p>
+                                  <button class="button offer__button">zobacz..</button>
+                            </div>
+                             
+                         </div>
+                        <div class="offer__box offer__box--image3">
+                            </div>
+                            <div class="offer__box">
+                                    <div class="offer__box-container">
+                                         <h3>KOLEKCJA</h3>
+                                          <h2>Damska</h2>
+                                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, soluta dicta porro culpa sit dolor enim aut expedita voluptates veniam.,</p>
+                                          <button class="button offer__button">zobacz..</button>
+                                    </div>
+                                     
+                                 </div>
+                </div>
+            </section>
+        <section class="icons-section">
+            <div class="icons-section__container">
+                <div class="icon-section__box">
+                    <img src="/pictures/hr.svg" alt="">
+                    <p>Lorem, ipsum.</p>
+                </div>
+                <div class="icon-section__box">
+                    <img src="/pictures/presentation.svg" alt="">
+                    <p>Lorem, ipsum.</p>
+                </div>
+                <div class="icon-section__box">
+                    <img src="/pictures/creative.svg" alt="">
+                    <p>Lorem, ipsum.</p>
+                </div>
             </div>
         </section>
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="about-picture"></div>
+                <div class="about-content">
+                    <h2>O NAS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, reprehenderit sint, blanditiis maxime nisi esse deleniti dolorem doloremque at ut sit accusamus quaerat? Fugit fugiat facilis optio vitae aliquid necessitatibus.</p>
+                </div>
+            </div>
+        </section>
+      
         <section class="company-description" id="offer">
             <div class="company-description__container">
               
@@ -132,7 +188,7 @@
                                     <address>
                                             <p>ul. Złota 7/18 <br>00-019 Warszawa</p>
                                             <p><a href="tel:+601555425">tel: 601-555-425</a></p>
-                                            <p><a href="coel@gmail.com"></a>email: coel@gmail.com</p>
+                                            <p><a href="optioffice@gmail.com"></a>email: coel@gmail.com</p>
                                         </address>
                             </div>
 
@@ -226,19 +282,172 @@ window.initMap= function(){
      
      let styledMapType = new google.maps.StyledMapType(
         [
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
             {
-                "featureType": "all",
-                "elementType": "all",
-                "stylers": [
-                    {
-                        "saturation": -100
-                    },
-                    {
-                        "gamma": 0.5
-                    }
-                ]
+                "saturation": 36
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 40
             }
-        ],
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "administrative",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 21
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    }
+],
         
           {name: 'Styled Map'}   
      )
