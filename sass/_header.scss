@@ -81,6 +81,7 @@
     &:hover{
         background: $dark;
         color: white;
+        transition: 1s all ease;
     }
     @include desktop{
     position: absolute;

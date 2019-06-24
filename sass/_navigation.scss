@@ -5,7 +5,7 @@
     align-items: center;
     position: fixed;
 
-    z-index: 100;
+    z-index: -100;
     width: 100%;
     background: whitesmoke;
     opacity:0;
@@ -20,6 +20,7 @@
 }
 .fade{
     opacity: 1 !important;
+    z-index: 999;
 }
 .navigation__container{
     height: 70%;
@@ -32,7 +33,7 @@
     background: whitesmoke;
     position: relative;
     @include phone-landscape{
-        height: 100%;
+        height: 50%;
     }
         @include desktop{
             flex-direction: row;
@@ -71,14 +72,21 @@ a[href^="tel:"] {
     right: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+   
    a{
        height: 75%;
         width: 40%;
+        &:hover{
+            opacity: 0.5 !important;
+        }
+       
    }
     
 }
 .navigation-media__item{
     height: 100%;
+    
 }
 .navigation__list{
     width: 100%;
@@ -102,6 +110,9 @@ a[href^="tel:"] {
         padding-top: 3rem;
         font-size: 1.6rem;
         color: $shadeno1;
+        &:hover{
+            opacity: .5;
+        }
         @include phone-landscape{
             font-size: 1.3rem;
         }
@@ -142,7 +153,7 @@ a[href^="tel:"] {
     position: fixed;
     width:3rem;
     height: 2rem;
-    z-index: 999;
+    z-index: 1999;
     top: 10%;
     right: 5%;
     display: flex;
@@ -162,112 +173,40 @@ a[href^="tel:"] {
 }
 .translateAdd{
     position: absolute;
-    transform: rotate(45deg);
+    
     animation: show 1s;
 }
 .translateMinus{
     position: absolute;
-    transform: rotate(-45deg);
+    bottom: -10%;
+    
+  
    
     
 }
-.active{
-    transform: translateY(0%);
-    transition: 1s all ease;
-   
-}
-.hide{
-    transform: translateY(-120%);
-    transition: 1s all ease;
-    @include desktop{
-        transform: translateY(0%);
-        transition: 1s all ease;
-    }
-}
+
 .dark-background{
     background: black;
 }
 .dark-item{
-    background: black;
+    background: black !important;
 }
-.navigation__dropdown{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-}
-.dropdown__list-hide{
-    height: 0;
-    opacity: 0;
-    transition: .5s ease-in;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    a{
-        height: 0;
-        width: 0;
-    }
-    @include desktop{
-        position: absolute;
-        z-index: -1;
-    }
 
-}
-.dropdown__list-visible{
-    height: 10rem;
-    opacity: 1;
-    transition: .5s ease-in;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
-    justify-content: center ;
-    a{
-        height: 4rem;
-        width: 10%;
-        @include phone-landscape{
-            height: 3rem;
-        }
-    }
-   @include desktop{
-       position: absolute;
-       left: 0;
-       bottom: -430%;
-       height: 5rem;
-       display: flex;
-       justify-content: space-between;
-       align-items: flex-start;
-   }
-}
-.dropdown-item{
-    font-size: 1.5rem !important;
-    color: $shadeno3 !important;
-    height: 2rem !important;
-    @include desktop{
-        font-size: 1rem !important;
-        z-index: -1 !important;
-      
-    }
-}
-.dropdown__list--construction{
-    background: white !important;
-}
+
+
 @keyframes show{
     0%{
-        transform: rotate(0deg);
+        transform: translateX(-10%);
         opacity:0;
        
     }
     50%{
-        transform: rotate(30deg);
+        transform: translateX(-50%);
         opacity: 0.5;
         
     }
     100%{
-        transform: rotate(45deg);
+        transform: translateX(-100%);
         opacity: 1;
         
     }

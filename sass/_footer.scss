@@ -59,6 +59,9 @@
         }
         li{
             color: white;
+            &:hover{
+                opacity: .5;
+            }
             @include desktop{
                 padding-right: 4rem;
             }

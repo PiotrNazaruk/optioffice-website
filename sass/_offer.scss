@@ -5,13 +5,21 @@
     align-items: center;
     width: 100%;
     background: whitesmoke;
-    
+    @include small-phone{
+        height: 300vh;
+    }
+    @include phone-landscape{
+        height: 300vh;
+    }
+    @include tablet{
+        height: 150vh;
+    }
     @include desktop{
         height: 100vh;
     }
     &__container{
         height: 95%;
-        width: 90%;
+        max-width: 900px;
         display: flex;
         overflow: hidden;
         flex-wrap: wrap;
@@ -19,10 +27,11 @@
         align-items: center;
         flex-direction: column;
         @include phone-landscape{
-            width: 50%;
+            
+            flex-direction: row;
         }
         @include tablet{
-            width: 50%;
+            flex-direction: row;
         }
         @include desktop{
             flex-direction: row;

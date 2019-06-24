@@ -1,16 +1,260 @@
 .offer-header{
-    height: 70vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include small-phone{
+        height: 130vh;
+    }
+    @include phone-landscape{
+        height: 120vh;
+    }
+   
+    &__container{
+        height: 95%;
+        width: 95%;
+       
+        
+        
+    }
+}
+.offer__image{
+    height: 50%;
+    background: url('/pictures/clothes99.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-y: 90%;
+    @include desktop{
+        height: 60%;
+    }
+}
+.offer__content{
+    height: 50%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include desktop{
+        width: 50%;
+        height: 40%;
+    }
+    p{
+        padding-top: 2rem;
+        text-align: center;
+    }
+    h2{
+        color: #425944;
+    }
+
+}
+.offer-details{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-phone{
+        height: 100vh;
+    }
+    @include phone-landscape{
+        height: 120vh;
+    }
+    @include desktop{
+        height: 50vh;
+    }
+    
    
     &__container{
         height: 95%;
         width: 95%;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+        }
+       
+        
         
     }
+}
+.offer-details__image{
+    height: 100%;
+    width: 100%;
+    background: url('/pictures/clothes1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(.7);
+    @include desktop{
+        width: 50%;
+    }
+
+}
+.offer-details__list{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include desktop{
+        width: 50%;
+    }
+    ul{
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    h3{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: .1rem ;
+            background:  $shadeno2;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+           
+            
+        }
+    }
+
+}
+.brands{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include small-phone{
+        height: 100vh;
+    }
+    @include phone-landscape{
+        height: 130vh;
+    }
+    @include desktop{
+        height: 50vh;
+    }
+   
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+        }
+       
+        
+        
+    }
+}
+.brands__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    @include phone-landscape{
+        height: 30%;
+        justify-content: space-around;
+    }
+    @include desktop{
+        width: 50%;
+        height: 100%;
+    }
+    p{
+        height: 60%;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        @include phone-landscape{
+            padding-top: 2rem;
+        }
+    }
+    h3{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 40%;
+            height: .1rem ;
+            background:  $shadeno2;
+            bottom: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+           
+            
+        }
+    }
+    
+}
+.brands__image{
+    width: 100%;
+    background: url('/pictures/brands.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(.7);
+    height: 50%;
+    @include desktop{
+        height: 100%;
+        width: 50%;
+    }
+}
+.offer-contact{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    @include small-phone{
+        height: 40vh;
+    }
+    @include phone-landscape{
+        height: 60vh;
+    }
+    @include desktop{
+        height: 30vh;
+    }
+   
+    &__container{
+        height: 95%;
+        width: 95%;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        h2{
+            height: 40%;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            letter-spacing: .2rem;
+            color: #425944;
+            
+            
+        }
+        a{
+            
+        }
+        @include desktop{
+            flex-direction: row;
+        }
+       
+        
+        
+    }
+}
+.offer-button{
+    transform: translateX(-50%);
+    left: 50%;
+    height: 5rem;
+    width: 10rem;
+    bottom: 5%;
 }

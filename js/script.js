@@ -15,22 +15,15 @@ const translateBurger = ()=>{
     navigationItems.forEach((item)=>{
         item.classList.toggle('dark-background');
     })
-    let windowWidth = window.innerWidth;
-    if(windowWidth < 600){
-        TweenMax.staggerFrom('.navigation-animation',.2,{
-        
-        },0.3)
-    }
+ 
 
 }
-const shodDropDown = (e)=>{
-    dropDownList.classList.toggle('dropdown__list-visible');
-}
+
 const navigationBurger = document.querySelector('.navigation-burger').addEventListener('click',translateBurger);
 navigationLinks.forEach((item)=>{
     item.addEventListener('click',function(){
         navigation.classList.add('hide');
-        navigation.classList.toggle('active');
+        navigation.classList.toggle('fade');
         navigationItemSecond.classList.toggle('display-none');
         navigationItemFirst.classList.toggle('translateAdd');
         navigationItemThird.classList.toggle('translateMinus');
@@ -40,7 +33,6 @@ navigationLinks.forEach((item)=>{
         console.log('kij')
     })
 })
-navigationDropDown.addEventListener('click',shodDropDown);
 window.addEventListener('scroll',()=>{
     let scrollY = window.scrollY;
     if(scrollY > 200){
@@ -53,8 +45,16 @@ window.addEventListener('scroll',()=>{
         })
     }
 })
+let windowWidth = window.innerWidth;
+if(windowWidth > 600){
+    TweenMax.staggerFrom('.navigation-animation',.2,{
+        y:10,
+        opacity:0,
+        delay: 1
 
-TweenMax.from('.header-h1',2,{
+    },0.3)
+}
+TweenMax.from('.h1',2,{
     x:20,
     opacity: 0
 })

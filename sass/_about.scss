@@ -5,7 +5,10 @@
     align-items: center;
     background: whitesmoke;
     @include small-phone{
-        height: 60vh;
+        height: 100vh;
+    }
+    @include phone-landscape{
+        height: 130vh;
     }
     @include desktop{
         height: 50vh;
