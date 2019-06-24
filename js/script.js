@@ -7,7 +7,7 @@ const navigationLinks = document.querySelectorAll('.navigation__link');
 const navigationDropDown = document.querySelector('.navigation__dropdown');
 const dropDownList = document.querySelector('.dropdown__list-hide');
 const translateBurger = ()=>{
-    navigation.classList.toggle('active');
+    navigation.classList.toggle('fade');
     navigation.classList.remove('hide');
     navigationItemSecond.classList.toggle('display-none');
     navigationItemFirst.classList.toggle('translateAdd');

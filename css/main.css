@@ -55,15 +55,20 @@ map buttons
   justify-content: center;
   align-items: center;
   position: fixed;
-  transform: translateY(-120%);
   z-index: 100;
   width: 100%;
-  background: whitesmoke; }
+  background: whitesmoke;
+  opacity: 0;
+  transition: 1s all ease; }
   @media (min-width: 1024px) {
     .navigation {
       height: 20vh;
       transform: translateY(0%);
-      position: initial; } }
+      position: initial;
+      opacity: 1; } }
+
+.fade {
+  opacity: 1 !important; }
 
 .navigation__container {
   height: 70%;
@@ -156,7 +161,7 @@ a[href^="tel:"] {
     .navigation__logo {
       height: 100%;
       display: flex;
-      width: 20%;
+      width: 30%;
       padding-top: 2rem; } }
 
 .home-link {
@@ -650,15 +655,17 @@ a[href^="tel:"] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 60%;
     align-items: flex-start;
     padding-left: 1rem; }
     @media (min-width: 1024px) {
       .footer__links ul {
         align-items: flex-end; } }
     .footer__links ul li {
-      color: white;
-      padding-right: 2rem; }
+      color: white; }
+      @media (min-width: 1024px) {
+        .footer__links ul li {
+          padding-right: 4rem; } }
 
 .footer__icons {
   width: 30%;
@@ -690,3 +697,16 @@ a[href^="tel:"] {
   bottom: 2%; }
   .footer__about-author span {
     color: white; }
+
+.offer-header {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .offer-header__container {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
