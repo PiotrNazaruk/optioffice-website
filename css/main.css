@@ -715,7 +715,7 @@ a[href^="tel:"] {
 .offer-details__image {
   height: 100%;
   width: 100%;
-  background: url("/pictures/clothes1.jpg");
+  background: url("../pictures/clothes1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.7); }
