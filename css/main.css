@@ -662,7 +662,7 @@ a[href^="tel:"] {
 
 .offer__image {
   height: 50%;
-  background: url("/pictures/clothes99.jpg");
+  background: url("../pictures/clothes99.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
