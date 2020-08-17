@@ -435,19 +435,19 @@ a[href^="tel:"] {
   background: transparent; }
 
 .offer__box--image1 {
-  background: url("./pictures/man.jpg");
+  background: url("../pictures/man.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.5); }
 
 .offer__box--image2 {
-  background: url("./pictures/woman.jpg");
+  background: url("../pictures/woman.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.5); }
 
 .offer__box--image3 {
-  background: url("./pictures/watch.jpg");
+  background: url("../pictures/watch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.5); }
@@ -457,7 +457,7 @@ a[href^="tel:"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("./pictures/clothes.jpg");
+  background: url("../pictures/clothes.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.8);
@@ -811,7 +811,7 @@ a[href^="tel:"] {
 
 .brands__image {
   width: 100%;
-  background: url("/pictures/brands.JPG");
+  background: url("../pictures/brands.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.7);
