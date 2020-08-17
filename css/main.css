@@ -230,7 +230,7 @@ a[href^="tel:"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("pictures/shopping2.jpg");
+  background-image: url("../pictures/shopping2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 17%; }
